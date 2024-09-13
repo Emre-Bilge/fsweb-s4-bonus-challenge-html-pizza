@@ -1,3 +1,7 @@
+*{
+  border: 1px solid purple;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -24,16 +28,49 @@ a:hover {
 }
 
 body {
+
   margin: 0;
-  display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
+header{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./public/assets/iteration-1/home-banner.png"); 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
 h1 {
-  font-size: 3.2em;
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 5em;
   line-height: 1.1;
+  color: black;
+}
+
+.üstyazi{
+  color: white;
+}
+.headersari{
+  box-sizing: border-box;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color:#FDC913 ;
+  font-family: "Satisfy", system-ui;
+  padding-bottom: 0;
+  margin: 0;
+}
+.headersonyazi h1{
+  color: white;
 }
 
 #app {
@@ -64,16 +101,31 @@ h1 {
   color: #888;
 }
 
+
+
 button {
-  border-radius: 8px;
+  border-radius: 100px;
+  color:black;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 0.6em 2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+}
+.btn{
+  border-radius: 100px;
+  color:red;
+  border: 1px solid transparent;
+  padding: 0.6em 1.5em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  background-color: #ffffff
 }
 button:hover {
   border-color: #646cff;
@@ -82,6 +134,227 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+.yenikore{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.yenikore nav{
+  display: flex;
+}
+.ortayazi{
+  color: black;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+.ortayazi img{
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+
+.mainsection-container{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #FAF7F2;
+}
+.main1{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftmenu{
+  width: 35vw;
+  height: 45vh;
+  color: #FAF7F2;
+  border-radius: 5px; 
+  background-image: url("./public/assets/iteration-2/cta/kart-1.png");
+}
+.leftmenu h3{
+  font-size: 2rem;
+  padding-left: 1vw;
+}
+
+.leftmenu p{
+  padding-left: 1vw;
+}
+
+.menubtn{
+  margin-left: 1vw;
+  background-color: white;
+  color: #CE2829;
+}
+
+.rightmenu1{
+background-image: url("./public/assets/iteration-2/cta/kart-2.png");
+background-size: 35vw 22.5vh;
+background-position: center;
+width: 35vw;
+height: 22.5vh;
+color: #FAF7F2;
+margin-left: 0.2vw;
+border-radius: 5px;
+}
+
+.rightmenu1 h4, .rightmenu1 button {
+  padding-left: 1vw;
+}
+
+.rightmenu2 {
+  background-image: url("./public/assets/iteration-2/cta/kart-3.png");
+  background-size: 35vw 22.5vh;
+  background-position: center;
+  width: 35vw;
+  height: 22.5vh;
+  color: black;
+  margin-left: 0.2vw;
+  border-radius: 5px;
+}
+.highlight-red{
+  color: red;
+}
+.main2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.main2 h6{
+  color: #CE2829;
+  font-family: "Satisfy", system-ui;
+  font-size: 1rem;
+  
+}
+.main2 h4{
+  font-size: 1.8rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.main3{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main3 nav{
+  display: flex;
+  justify-content: center;
+  height: 6vh;
+}
+
+.digeryazi{
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: left;
+  text-decoration: none;
+  border-radius: 50px;
+  gap: 10px ;
+}
+.main3 nav img{
+  border-radius: 10px;
+  margin-right: 0.1vw;
+  margin-left: 4vw;
+  
+}
+
+.main3 nav .digeryazi:nth-child(2){
+  background-color: black;
+  color: white;
+}
+
+.main4{
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  gap: 5vw ;
+  
+}
+.terminal1{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.terminal2{
+  display: flex;
+  flex-direction: column;
+ 
+}
+.terminal3{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.fiyat{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+
+footer{
+  margin-top: 0;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 50vh;
+  background-color: black;
+  background-size: 100vw;
+  justify-content: center;
+  align-items: center;
+
+}
+.sonbolum-0{
+  display: flex;
+  width: 65vw;
+}
+.sonbolum-1 , .sonbolum-2 , .sonbolum-3{
+  flex: 0.3;
+  color: white;
+}
+.sonbolum-1{
+  display: flex;
+flex-direction: column;
+}
+.sonbolum-1 h3{
+  font-size: 2rem;
+}
+.sonbolum-nav{
+  display: flex;
+  flex-direction: column;
+}
+.sonbolum-nav a{
+  color: white;
+  
+}
+.sonbolum-3-1{
+  display: flex;
+  flex-wrap: wrap;
+}
+.twitter{
+  display: flex;
+  color: white;
+  width: 65vw;
+  justify-content: space-between;
+  align-items: center;
+}
+.twitter i{
+  margin-right: 6.5vw;
+}
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -92,6 +365,13 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #FDC913;
   }
+.yenikore a{
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
 }
